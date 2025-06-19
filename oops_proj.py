@@ -12,7 +12,7 @@ class chatbook:
         elif user_input == "2":
             self.sign_in()
         elif user_input == "3":
-            pass
+            self.posting()
         elif user_input == "4":
             pass
         else:
@@ -39,7 +39,15 @@ class chatbook:
                 self.loggedin = True
             else:
                 print("invalid credentials")
-                print("\n")
+        print("\n")
+        self.menu()
+
+    def posting(self):
+        if self.loggedin:
+            txt = input("enter your text here ->")
+            print(f"your text message has been posted successfully, the message is {txt}")
+        else:
+            print("please sign in first by pressing 2")
         print("\n")
         self.menu()
 
