@@ -14,11 +14,11 @@ class chatbook:
 
 
     @staticmethod
-    def get_id(self):
+    def get_id():
         return chatbook.__user_id
     
     @staticmethod
-    def set_id(self, value):
+    def set_id(value):
         chatbook.__user_id = value
 
     def get_name(self):

@@ -14,6 +14,9 @@ from oops_proj import chatbook
 user1 = chatbook()
 print(user1.id)
 
+chatbook.set_id(100)
+user2 = chatbook()
+print(user2.id)
 # user2 = chatbook()
 # print(user2.id)
 
